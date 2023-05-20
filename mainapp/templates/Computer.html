@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+  {% block page_title %}
+      <h1 align="center"> Данные об компьютере </h1>
+      <p align="center"><a href = "{% url 'index' %}">Вернуться на главную страницу</a></p>
+  {% endblock %}
+
+{% block page_content %}
+      <table border = "2" align="center">
+        <tr>
+            <th>Имя</th>
+            <th>Конфигурация</th>
+        </tr>
+        {% for p in Computer %}
+            <tr>
+              <td>{{p.name}}</td>
+              <td>{{p.configuration}}</td>
+
+              {% if request.user.is_authenticated %}
+                    <td><a href ="{% url 'edit_computer' p.id %}">Изменить</a></td>
+                    {% if power_user %}
+                    <td><a href ="{% url 'del_computer' p.id %}">Удалить</a></td>
+                    {% endif %}
+              {% endif %}
+            </tr>
+        {% endfor %}
+      </table>
+      <br>
+      {% if request.user.is_authenticated %}
+            {% if power_user %}
+                <p align="center"><a href = "{% url 'new_computer' %}">Добавить компьютер</a></p>
+            {% endif %}
+      {% endif %}
+  {% endblock %}

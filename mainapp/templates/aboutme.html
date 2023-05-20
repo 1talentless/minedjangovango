@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Евдокимов Иван Вячеславович</title>
+
+	<!-- Bootstrap reboot (для сброса стилей) -->
+	<link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+	<!-- Bootstrap сетка -->
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="{% static 'aboutme.css' %}">
+</head>
+
+<body>
+	<header>
+
+	<div class="header">
+	<nav class="navbar">
+		<div class = "container1">
+			<a href="#" class="navbar-brand">me, myself and i</a>
+			<div class="navbar-wrap">
+				 <ul class="navbar-menu">
+					<li><a href="aboutme.html">Обо мне</a></li>
+					<li><a href="studies.html">Учёба</a></li>
+					<li><a href="rest.html">Отдых</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	</header>
+<h1>Евдокимов Иван Вячеславович</h1>
+<nav align="center" class="navbar1" >
+	<a href="#bio">Биография /</a>
+	<a href="#hobbies">Увлечения /</a>
+	<a href="#books">Цитаты из книг /</a>
+	<a href="#study">Успеваемость /</a>
+</nav><br>
+</header>
+<p><img class="clown" src="photo.jpg" alt="Фото" width="550" height="500" id="puc"></p>
+<article id="bio"><h6>Биография</h6></article>
+<div class = "container">
+<p>Дата рождения: 05.07.2003</p>
+<p>Средняя общеобразовательная школа №48 им. М.Ю. Коломина</p>
+<p>Буква класса:"А"</p>
+<p>Дата окончания школы: 26.06.2021</p>
+</div><br><br><br>
+
+
+<article id="hobbies"><h6>Увлечения</h6></article>
+<div class = "container">
+<ul>Тренажёрный зал</ul>
+<ul>Книги, фильмы, сериалы</ul>
+<ul>Готовка</ul>
+</div><br><br><br>
+
+
+<article id="books"><h6>Цитаты из книг</h6></article>
+<div class = "container">
+<h3>"Форрест Гамп" - Уинстон Грум:</h3>
+<p>"Надо оставить прошлое позади, что бы идти вперед."</p>
+<h3>"Голгофа" - Октав Мирбо:</h3>
+<p>"Счастье и благополучие разводят, а беда обратно соединяет."</p>
+<h3>"Гарри Поттер и философский камень" - Джоан Роулинг:</h3>
+<p>"Правда – штука прекрасная и опасная, с ней надлежит обращаться с величайшей осторожностью."</p>
+</div><br><br><br>
+
+<article id="study"><h6>Успеваемость</h6></article>
+
+<div class="table-responsive">
+
+<table class="table table-condensed table-bordered table-hover">
+
+
+
+<thread>
+<tr>
+<th>Дисциплина</th>
+<th>Семестр</th>
+<th>Оценка</th>
+</tr>
+<tr><td>1.Безопасность жизнедеятельности</td><td rowspan="10">Весенний семестр 2021/2022(второй семестр)</td><td>Зачет</td>
+<tr><td>2.Дисциплины по физической культуре и спорту - игровые виды спорта </td><td>Зачет</td>
+<tr><td>3.Иностранный язык </td><td>Зачет</td>
+<tr><td>4.Математика</td><td>Зачет</td>
+<tr><td>5.Физика</td><td>Зачет</td>
+<tr><td>6.Философия</td><td>Зачет</td>
+<tr><td>7.История (история России, всеобщая история) </td><td>5</td>
+<tr><td>8.Классификация защищаемой информации и информационных систем </td><td>5</td>
+<tr><td>9.Основы информатики, организации ЭВМ, вычислительных и информационных систем </td><td>5</td>
+<tr><td>10.Технологии и методы программирования</td><td>5</td>
+<tr><td>1.Дисциплины по физической культуре и спорту - игровые виды спорта </td><td rowspan="10">Осенний семестр 2022/2023(третий семестр)</td><td>Зачет</td>
+<tr><td>2.Иностранный язык </td><td>Зачет</td>
+<tr><td>3.Математика</td><td>Зачет</td>
+<tr><td>4.Основы информатики, организации ЭВМ, вычислительных и информационных систем </td><td>Зачет</td>
+<tr><td>5.Технологии и методы программирования </td><td>Зачет</td>
+<tr><td>6.Экономика</td><td>Зачет</td>
+<tr><td>7.Нормативные требования по защите информации </td><td>5</td>
+<tr><td>8.Основы информационной безопасности </td><td>5</td>
+<tr><td>9.Физика</td><td>5</td>
+</table><br><br><br>
+
+
+<footer class = "fot">
+	<div class="container3">
+		<h6>Контакты</h6>
+<p>По всем вопросам <a href="mailto:214161@kuzstu.ru">пишите письма</a></p>
+<p><a href=tel:+79530684484>+7(953)068-44-84</a></p>
+<p><a href="https://vk.com/talent1ess">Социльная сеть Вконтакте</a></p>
+    <p>Создатель сайта: <span itemprop="creator" itemscope itemtype="">
+     <span itemprop="name">Студент КузГТУ</span>
+    </span></p>
+	</div>
+   </footer>
+</body>
+</html>
